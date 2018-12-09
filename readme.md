@@ -11,7 +11,7 @@
 4. run the application
 
 
-# TODO
+# Todo
 
 1. simplify the xml model
 2. write unit test for the JsonParser and XmlParser
