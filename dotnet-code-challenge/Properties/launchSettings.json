@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotnet-code-challenge": {
+      "commandName": "Project",
+      "commandLineArgs": "-c true -w true"
+    }
+  }
+}

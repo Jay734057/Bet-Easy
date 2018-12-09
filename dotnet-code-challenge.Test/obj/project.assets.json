@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "FluentCommandLineParser/1.4.3": {
+        "type": "package",
+        "compile": {
+          "lib/net35/FluentCommandLineParser.dll": {}
+        },
+        "runtime": {
+          "lib/net35/FluentCommandLineParser.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/1.0.3": {
         "type": "package",
         "compile": {
@@ -1595,6 +1604,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "FluentCommandLineParser": "1.4.3",
           "Microsoft.NETCore.App": "2.0.0",
           "Newtonsoft.Json": "12.0.1"
         },
@@ -1608,6 +1618,21 @@
     }
   },
   "libraries": {
+    "FluentCommandLineParser/1.4.3": {
+      "sha512": "5NiwUPXtGXL7g+ydFVvSrlUjdOR0rhEMVg+NJtB8d8ckNRrCu0zSiKCRXdpCBjR0rEkdYhmJFDhhDbvjP4Zv5g==",
+      "type": "package",
+      "path": "fluentcommandlineparser/1.4.3",
+      "files": [
+        "fluentcommandlineparser.1.4.3.nupkg.sha512",
+        "fluentcommandlineparser.nuspec",
+        "lib/net35-Client/FluentCommandLineParser.dll",
+        "lib/net35-Client/FluentCommandLineParser.dll.CodeAnalysisLog.xml",
+        "lib/net35-Client/FluentCommandLineParser.xml",
+        "lib/net35/FluentCommandLineParser.dll",
+        "lib/net35/FluentCommandLineParser.pdb",
+        "lib/net35/FluentCommandLineParser.xml"
+      ]
+    },
     "Microsoft.CodeCoverage/1.0.3": {
       "sha512": "CmE+u43TKfA4dLkle2NwArwZ9qAvPDC/8jzTDGIxdAI6+5lU8JKm9wRF8YICz5RMtLe+jzMmPm0/r1Awo6zoiQ==",
       "type": "package",
@@ -5564,5 +5589,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentCommandLineParser 1.4.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentCommandLineParser",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }
